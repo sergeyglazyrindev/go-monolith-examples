@@ -1,7 +1,7 @@
 package migrations
 
 import (
-	"github.com/sergeyglazyrindev/uadmin/core"
+	"github.com/sergeyglazyrindev/go-monolith/core"
 )
 
 var BMigrationRegistry *core.MigrationRegistry

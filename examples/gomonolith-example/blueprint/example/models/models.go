@@ -1,6 +1,6 @@
 package models
 
-import "github.com/sergeyglazyrindev/uadmin/core"
+import "github.com/sergeyglazyrindev/go-monolith/core"
 
 type Todo struct {
 	core.Model

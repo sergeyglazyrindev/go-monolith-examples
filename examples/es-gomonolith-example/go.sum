@@ -808,6 +808,8 @@ github.com/sanposhiho/wastedassign/v2 v2.0.6/go.mod h1:KyZ0MWTwxxBmfwn33zh3k1dms
 github.com/satori/go.uuid v1.2.0/go.mod h1:dA0hQrYB0VpLJoorglMZABFdXlWrHn1NEOzdhQKdks0=
 github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529/go.mod h1:DxrIzT+xaE7yg65j358z/aeFdxmN0P9QXhEzd20vsDc=
 github.com/securego/gosec/v2 v2.8.1/go.mod h1:pUmsq6+VyFEElJMUX+QB3p3LWNHXg1R3xh2ssVJPs8Q=
+github.com/sergeyglazyrindev/go-monolith v0.0.2 h1:kX0EHTfKAtK70crn6kB2Epo84C6lvhl0YY5FwsCMrL4=
+github.com/sergeyglazyrindev/go-monolith v0.0.2/go.mod h1:IyUQwh63o/BChmaXoDmA3VpEsd7jAK9mz3jkX1ZlgGM=
 github.com/sergeyglazyrindev/uadmin v1.3.4 h1:TRNVbqq+uXOpzIBdSxTRaT6RoQk74xltyPRzMeML+Dk=
 github.com/sergeyglazyrindev/uadmin v1.3.4/go.mod h1:/Nam8MZecge7lML1LAPQ9luKF/1WuEkNH9T3VojfPOs=
 github.com/sergi/go-diff v1.0.0/go.mod h1:0CfEIISq7TuYL3j771MWULgwwjU+GofnZX9QAmXWZgo=

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/sergeyglazyrindev/es_uadmin_example/blueprint/estweet"
-	"github.com/sergeyglazyrindev/uadmin"
+	"github.com/sergeyglazyrindev/go-monolith"
+	"github.com/sergeyglazyrindev/gomonolith_example/blueprint/example"
 	"os"
 )
 
@@ -11,9 +11,9 @@ func main() {
 	if environment == "" {
 		environment = "dev"
 	}
-	app1 := uadmin.NewApp(environment, true)
+	app1 := gomonolith.NewApp(environment, true)
 	// please configure everything you need for your project here.
-	app1.BlueprintRegistry.Register(estweet.ConcreteBlueprint)
+	app1.BlueprintRegistry.Register(example.ConcreteBlueprint)
 	// next two lines are mandatory for uadmin to determine your blueprints and everything else.
 	app1.Initialize()
 	app1.InitializeRouter()

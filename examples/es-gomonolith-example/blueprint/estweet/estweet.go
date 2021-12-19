@@ -3,8 +3,8 @@ package estweet
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/sergeyglazyrindev/es_uadmin_example/blueprint/estweet/migrations"
-	"github.com/sergeyglazyrindev/uadmin/core"
+	"github.com/sergeyglazyrindev/es_gomonolith_example/blueprint/estweet/migrations"
+	"github.com/sergeyglazyrindev/go-monolith/core"
 )
 
 type Blueprint struct {
@@ -12,8 +12,8 @@ type Blueprint struct {
 }
 
 type Tweet struct {
-	User    string `json:"user" uadmin:"list,search"`
-	Message string `json:"message" uadmin:"list,search"`
+	User    string `json:"user" gomonolith:"list,search"`
+	Message string `json:"message" gomonolith:"list,search"`
 	ID      string
 }
 

@@ -1,8 +1,8 @@
 package migrations
 
 import (
-	"github.com/sergeyglazyrindev/uadmin/core"
-	"github.com/sergeyglazyrindev/uadmin_example/blueprint/example/models"
+	"github.com/sergeyglazyrindev/go-monolith/core"
+	"github.com/sergeyglazyrindev/gomonolith_example/blueprint/example/models"
 )
 
 type initial1631027794 struct {

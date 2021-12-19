@@ -3,9 +3,9 @@ package example
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/sergeyglazyrindev/uadmin/core"
-	"github.com/sergeyglazyrindev/uadmin_example/blueprint/example/migrations"
-	"github.com/sergeyglazyrindev/uadmin_example/blueprint/example/models"
+	"github.com/sergeyglazyrindev/go-monolith/core"
+	"github.com/sergeyglazyrindev/gomonolith_example/blueprint/example/migrations"
+	"github.com/sergeyglazyrindev/gomonolith_example/blueprint/example/models"
 )
 
 type Blueprint struct {
@@ -55,7 +55,7 @@ func (b Blueprint) InitApp(app core.IApp) {
 var ConcreteBlueprint = Blueprint{
 	core.Blueprint{
 		Name:              "example",
-		Description:       "blueprint for uadmin example",
+		Description:       "blueprint for gomonolith example",
 		MigrationRegistry: migrations.BMigrationRegistry,
 	},
 }

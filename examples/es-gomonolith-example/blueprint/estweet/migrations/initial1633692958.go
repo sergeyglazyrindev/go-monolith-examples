@@ -3,7 +3,7 @@ package migrations
 import (
 	"context"
 	"fmt"
-	"github.com/sergeyglazyrindev/uadmin/core"
+	"github.com/sergeyglazyrindev/go-monolith/core"
 )
 
 type Tweet struct {
@@ -23,9 +23,9 @@ func (m initial1633692958) GetID() int64 {
 	return 1633692958
 }
 
-func (m initial1633692958) Up(uadminDatabase *core.UadminDatabase) error {
+func (m initial1633692958) Up(database *core.ProjectDatabase) error {
 	// Create a client
-	client := core.NewUadminESClient()
+	client := core.NewProjectESClient()
 	client.DeleteIndex("tweets").Do(context.Background())
 	// Create an index
 	_, err := client.CreateIndex("tweets").Do(context.Background())
@@ -52,8 +52,8 @@ func (m initial1633692958) Up(uadminDatabase *core.UadminDatabase) error {
 	return nil
 }
 
-func (m initial1633692958) Down(uadminDatabase *core.UadminDatabase) error {
-	client := core.NewUadminESClient()
+func (m initial1633692958) Down(database *core.ProjectDatabase) error {
+	client := core.NewProjectESClient()
 	client.DeleteIndex("tweets").Do(context.Background())
 	return nil
 }
